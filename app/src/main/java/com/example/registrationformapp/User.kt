@@ -11,4 +11,6 @@ data class User(
     val password: String
 ): Serializable {
 
+    fun getFullName() = "$title $firstName $lastName"
+
 }
