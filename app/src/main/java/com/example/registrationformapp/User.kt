@@ -2,12 +2,13 @@ package com.example.registrationformapp
 
 import java.io.Serializable
 
-data class Message(
+data class User(
+    val title: String,
     val firstName: String,
     val lastName: String,
     val emailAddress: String,
     val phoneNumber: String,
-    val title: String?
+    val password: String
 ): Serializable {
 
 }
